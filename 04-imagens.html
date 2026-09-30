@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre imagens | HTML</title>
+</head>
+
+<body>
+
+    ```
+    <h1>Sobre imagens</h1>
+    <hr>
+
+    <p>Trabalhando com o elemento de &lt;img&gt;</p>
+
+    <img src="céu.jpg" alt="Lindo céu azul com nuvens brancas." width="500">
+
+    EXEMPLO:
+
+    <img src="" alt="">
+
+    <p>Entendendo os atributos:</p>
+
+    <ul>
+        <li>
+            <strong>src</strong>: Source/fonte: É o caminho onde a imagem está hospedada/armazenada.
+            Pode ser um caminho local ou um link direto da internet.
+        </li>
+
+        <li>
+            <strong>alt</strong>: Alternative. É uma breve descrição da imagem.
+            É crucial para <strong>acessibilidade</strong> e como fallback (plano B).
+        </li>
+    </ul>
+
+    <h2>Trabalhando com recursos externos</h2>
+
+    <p>Configurando imagens externas</p>
+
+    <img src="https://rounder.pics/assets/img/ui/square-image.webp" alt="Imagem externa">
+
+    <h2>Outras abordagens</h2>
+
+    <h3>Elemento figure</h3>
+
+    <figure>
+        <img src="céu.jpg" alt="Lindo céu azul com nuvens brancas." width="600" height="400">
+
+        <figcaption>
+            Céu azul com nuvens brancas - Foto: Kauã de Caires.
+        </figcaption>
+    </figure>
+
+    <h3>Elemento picture</h3>
+
+    <p>
+        Utilizamos o elemento &lt;picture&gt; para controlarmos qual arquivo
+        será utilizado de acordo com determinadas condições.
+    </p>
+
+    <picture>
+
+        <!-- Imagem utilizada em telas menores -->
+        <source media="(max-width: 600px)" srcset="céu.jpg">
+
+        <!-- Imagem principal/fallback -->
+        <img src="céu.jpg" alt="Lindo céu azul com nuvens brancas.">
+
+    </picture>
+
+    <hr>
+
+    <h2>Sobre os tipos de imagem</h2>
+
+    <p>
+        Você pode encontrar um acervo muito grande de tipos de imagens.
+        A escolha da imagem certa pode levar a performance do seu site.
+        Veja a lista abaixo:
+    </p>
+
+    <ul>
+        <li>JPEG: Formato mais utilizado na web. Ideal para fotos e imagens com muitas cores.</li>
+        <li>PNG: Ideal para imagens com transparência e gráficos.</li>
+        <li>GIF: Ideal para animações simples.</li>
+        <li>SVG: Ideal para gráficos vetoriais e ícones.</li>
+        <li>WebP: Formato moderno que oferece boa qualidade com tamanho reduzido.</li>
+    </ul>
+
+</body>
+
+</html>
